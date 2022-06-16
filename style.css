@@ -15,6 +15,10 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
   /*  background-color:#a8a3a3;*/
     width: 2rem;
@@ -178,6 +182,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 1;
 }
 
 .show-menu .sidebar{
@@ -280,7 +285,7 @@ header{
 }
 
 .sessao-header h1{
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--font-primary);
     font-size: 3rem;
     color: #c08582;
     border-bottom: solid 3px #faaca8;
@@ -513,3 +518,41 @@ header{
 .preenchido{
     pointer-events: none;
 }
+
+.sessao-Escolaridade{
+    background-color: rgb(252, 228, 232);
+    font-family: var(--font-primary);
+    font-size: 2rem; 
+}
+
+.escolaridade{
+    display: grid;
+    row-gap: .5rem;
+    justify-content: center;
+}
+.escolaridade-graus{
+    display: flex;
+    align-items:center;
+    color: #001affab;
+    justify-content: center;
+}
+
+.sessao-graus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(192, 133, 130);
+}
+
+.escolaridade-graus h3{
+    font-family: var(--font-secundary);
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.escolaridade-texto{
+    font-family: var(--font-action);
+    margin-top: 1rem;
+    color: #eee;
+}
+
